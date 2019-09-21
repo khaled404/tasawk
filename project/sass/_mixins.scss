@@ -1,0 +1,29 @@
+@mixin mob320 {
+  @media (max-width: 320px) { @content };
+}
+@mixin mob375 {
+  @media (max-width: 375px) { @content };
+}
+@mixin mob425 {
+  @media (max-width: 425px) { @content };
+}
+@mixin mob480 {
+  @media (max-width: 480px) { @content };
+}
+
+@mixin Xs {
+  @media (max-width: 767px) {@content};
+}
+//For Small
+@mixin Sm {
+  @media (max-width: 991px) {@content};
+}
+//For Medium
+@mixin Md {
+  @media (min-width: 992px) {@content;}
+}
+//For Extra Large
+@mixin Lg {
+  @media (min-width: 1200px) {@content;}
+}
+  

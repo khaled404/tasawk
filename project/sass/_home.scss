@@ -3,6 +3,10 @@ body{
     background-repeat: no-repeat;
     overflow: hidden;
     background-image: linear-gradient(to bottom ,#4dcff4 , #ddffd6 );
+    @media (max-width:480px) {
+        background-image: url('../images/phoneBac.png');
+        background-size: cover;
+    }
     height: 100vh;
 }
 
@@ -40,7 +44,7 @@ body{
             width: auto;
             height: auto;
             @media (max-width:480px) {
-                width: 80%;   
+                width: 70%;   
             }
         }
     }
@@ -64,6 +68,10 @@ body{
         align-items: center;
         height: 100vh;
         width: 338px;
+        @media (max-width:480px) {
+            width: 288px;
+        }
+
         background-color: #fff;
         transition: .5s;
         z-index: 100;
@@ -73,10 +81,6 @@ body{
         }
         .header{
             height: 198px;
-            @media (max-width:1024px) {
-                height: 168px;
-            }
-
             width: 100%;
             position: relative; 
             background-color: #e67126;
@@ -85,11 +89,8 @@ body{
                 position: absolute;
                 width: 100%;
                 left: 50%;
-                top: 50px;
-                @media (max-width:1024px) {
-                    top: 20px;
-                }
-                    transform: translateX(-50%);
+                top: 70px;
+                transform: translateX(-50%);
                 font-family: 'Cairo', sans-serif;
                 h2{
                     font-size: 20px;
@@ -206,7 +207,6 @@ body{
         }
         width: 100%;
         backface-visibility: visible !important;
-
         margin-right: auto;
         margin-left: auto;
         position: absolute !important;
@@ -227,6 +227,10 @@ body{
             @media (max-width:1024px) {
                 right: 54px !important;
             }
+            @media (max-width:480px) {
+                right: -300px !important;
+                bottom: 40px !important;
+            }
             img{
                 width: 90%;
                 height: auto;
@@ -238,6 +242,9 @@ body{
                 }
                 @media (max-width:1024px) {
                     width:70%;
+                }
+                @media (max-width:480px) {
+                    width:40%;
                 }
             }
         }
@@ -257,6 +264,11 @@ body{
                 right: -154px !important;
             }
 
+            @media (max-width:480px) {
+                right: -310px !important;
+                bottom: 40px !important;
+            }
+
             img{
                 width: 90%;
                 height: auto;
@@ -269,6 +281,10 @@ body{
                 @media (min-width:1920px) {
                     width: 120%;            
                 }
+                @media (max-width:480px) {
+                    width:40%;
+                }
+
             }
         }
 
@@ -283,6 +299,10 @@ body{
             @media (min-width: 1920px) {
                 left: 112px !important;
             }
+            @media (max-width:480px) {
+                left: -64px !important;
+                bottom: 40px !important;
+            }
 
             img{
                 width: 90%;
@@ -297,6 +317,10 @@ body{
                 @media (min-width:1920px) {
                     width: 120%;            
                 }
+                @media (max-width:480px) {
+                    width:40%;
+                }
+
             }
         }
         .tree{
@@ -310,6 +334,15 @@ body{
                 right: 55px !important;
                 bottom: 160px !important;
             }
+            @media (max-width:1024px) {
+                right: -5px !important;
+                bottom: 130px !important;
+
+            }
+            @media (max-width:480px) {
+                right: -50px !important;
+                bottom: 65px !important;
+            }
 
             img{
                 width: 90%;
@@ -321,6 +354,9 @@ body{
                 }
                 @media (min-width:1920px) {
                     width: 120%;            
+                }
+                @media (max-width:480px) {
+                    width:40%;
                 }
 
             }
@@ -352,6 +388,12 @@ body{
                 right: -36px !important;
                 top: 90px !important;
             }
+            @media (max-width:480px) {
+                top: 430px !important;
+                right: 27px !important;
+
+            }
+
             img{
                 width: 90%;
                 @media (max-width:1024px) {
@@ -363,7 +405,10 @@ body{
                 @media (min-width:1920px) {
                     width: 120%;
                 }
-    
+                @media (max-width:480px) {
+                    width:40%;
+                }
+
             }
         }
         .cl1,.cl2,.cl3{
@@ -447,6 +492,11 @@ body{
         @media (max-width:991px){
             left:40%;
         }
+        @media (max-width:480px){
+            left:50%;
+            transform: translateX(-27%);
+            bottom: 15px;
+        }
 
         @media (min-width:1920px) {
             transform: translateX(-130%);
@@ -460,7 +510,9 @@ body{
             @media (max-width:1024px) {
                 width:70%;
             }
-
+            @media (max-width:480px){
+                width:40%;
+            }
         }
         .employee-1{
             z-index: 5;
@@ -481,7 +533,10 @@ body{
                 top: 4px;
                 left: 90px;
             }
-
+            @media (max-width:480px) {
+                left: 55px;
+                top: -10px;
+            }
         }
         .employee-3{
             position: absolute !important;
@@ -502,6 +557,10 @@ body{
                 top: 72px;
                 left: 113px;
             }
+            @media (max-width:480px) {
+                left: 64px;
+                top: 45px;
+            }
 
         }
         .employee-4{
@@ -520,6 +579,11 @@ body{
                 top: 79px;
                 right: 161px;
             }
+            @media (max-width:480px) {
+                top: 45px;
+                right: 191px;
+            }
+
         }
         .employee-5{
             position: absolute !important;
@@ -533,7 +597,10 @@ body{
                 bottom: 52.5px;
                 left: -23px;
             }
-
+            @media (max-width:480px) {
+                bottom: 30px;
+                left: -13px;
+            }
             width: auto;
             z-index: 5;
             transform: translate(0 , 0) rotate(0);
@@ -596,6 +663,17 @@ body{
         }
     
     }
+@media (max-width:480px) {
+    @keyframes employee-5 {
+        0%{
+            transform: translate(3px, 0px) rotate(-10deg);
+        }
+        100%{
+            transform: translate(0 , 0) rotate(0);
+        }
+    }
+
+}
 .street{
         position: absolute !important;
         bottom:0 !important;
@@ -605,6 +683,10 @@ body{
         img{
             height: 150PX;
             width: 100%;
+            @media (max-width:480px) {
+                height: 70PX;
+            }
+
         }
     }
     .formes{
@@ -612,6 +694,11 @@ body{
         top:-280px;
         width: 285px;
         height: 260px;
+        @media (max-width:480px) {
+            width: 265px;
+            height: 240px;
+        }
+
         margin: auto;
         bottom: 0;
         z-index: 1;
@@ -638,6 +725,10 @@ body{
             right: 0;
             bottom: 0;
             z-index: -1;
+            @media (max-width:480px) {
+                width: 100%;
+            }
+    
         }
     }
 
@@ -647,6 +738,10 @@ body{
         width: 285px;
         height: 260px;
         margin: auto;
+        @media (max-width:480px) {
+            right: -16px;
+        }
+
         form{
             height: 100%;
             display: flex;
@@ -659,6 +754,7 @@ body{
             .logInput{
                 width: 216px;
                 height: 60px;
+    
                 border: none;
                 border-radius: 100px 90px /  28px 65px 91px 66px;
                 outline: none;
@@ -666,8 +762,12 @@ body{
                 padding-right: 5px;
                 text-align: center;
                 margin-bottom: 33px;
-                color: #ea9e27;
                 font-size: 35px;
+                color: rgba(#000,.2);
+                transition: .5;
+                &:focus{
+                    color: #ea9e27;
+                }
             }
             .loginput::placeholder{
                 font-size: 30px;
@@ -810,9 +910,11 @@ body{
     }
     @media (max-width:768px) {
         left: 96px;
-        top: 50px;    
+        top: 50px !important;      
     }
     @media (max-width:480px) {
+        top: 75px !important;    
+        font-size: 66.281px;          
         left: 50%;
         top:60px;
         transform:translateX(-50%);

@@ -414,7 +414,7 @@ body {
         .content .maincon .sun {
           bottom: 165px  !important;
           right: 37px !important; } }
-      @media (max-height: 736px) {
+      @media (max-height: 736px) and (max-width: 480px) {
         .content .maincon .sun {
           bottom: 175px  !important; } }
       .content .maincon .sun img {

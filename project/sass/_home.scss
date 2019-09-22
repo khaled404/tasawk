@@ -928,9 +928,10 @@ body{
         bottom:550px ;
     }
     @media (max-width:375px) {
-        bottom:480px ;
+        bottom:470px ;
     }
-    @media (max-height:812px) {
+    @media (min-height:812px ) and (max-height:1024px) {
         bottom:540px  ;
     }
+
 }

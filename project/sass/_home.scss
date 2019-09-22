@@ -1,13 +1,15 @@
 body{
     direction: rtl;
-    background-repeat: no-repeat;
     overflow: hidden;
+    height: 100vh;
+}
+.first-body{
+    background-repeat: no-repeat;
     background-image: linear-gradient(to bottom ,#4dcff4 , #ddffd6 );
     @media (max-width:480px) {
         background-image: url('../images/phoneBac.png');
         background-size: cover;
     }
-    height: 100vh;
 }
 
 .overlay{
@@ -848,17 +850,38 @@ body{
     }
     .welcome{
         position: absolute;
-        top:91px;
-        width: 285px;
-        height: 260px;
+        bottom: 342px;
+        right: 487px;
+        width: max-content;
+        height: max-content;
         margin: auto;
-        .welcome-bac{
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;   
-            bottom: 0;
-            z-index: -1;
+        z-index: 22;
+        @media (min-width:1820px) {
+            bottom: 342px;
+            right: 760px;
+        }
+        @media (max-width:1024px) {
+            bottom: 242px;
+            right: 350px;
+        }
+        @media (max-width:991px) {
+            bottom: 200px;
+            right: 30%;
+            .welcome-bac{
+                width: 80%;
+            }
+        }
+        @media (max-width:480px) {
+            bottom: 200px;
+            right: 10%;
+        }
+        @media (max-width:414px) {
+            bottom: 300px;
+            right: 0;
+        }
+        @media (max-width:375px) {
+            bottom: 240px;
+            right: -40px;
         }
         .massage{
             position: absolute;
@@ -871,6 +894,10 @@ body{
             align-items: center;
             justify-content: center;
             text-align: center;
+            @media (max-width:991px) {
+                left: 40%;
+            }
+
             img{
                 margin-bottom: 8px;
             }
@@ -882,6 +909,10 @@ body{
                 line-height: 1.2;
                 margin: auto;
                 margin-bottom: 37px;
+                @media (max-width:991px) {
+                    width: 70%;
+                    font-size: 25px;
+                }
             }
         }
         .massage.ms2{
@@ -936,5 +967,231 @@ body{
     }
     @media (min-height:812px ) and (max-height:1024px) {
         bottom:540px  ;
+    }
+}
+// page 2
+.body2{
+    background-color: #c8ebf2;
+}
+.mainCon2{
+    *{
+        backface-visibility: hidden;
+    }
+    width: 100%;
+    backface-visibility: visible !important;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute !important;
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    .offes{
+        position: absolute;
+        right: 20px;
+        bottom: 30px;
+        width: max-content;
+        height: max-content;
+        z-index: -1;
+
+        .light{
+            position: absolute;
+            bottom: 140px;
+            left: 46px;
+            animation: offesLight 1s ease-in-out infinite alternate ;
+
+        }
+        .branch{
+            position: absolute;
+            right: -10px;
+            bottom: 30px;
+            animation: branch 3s ease-in-out infinite alternate ;
+            @media (max-width:1024px) {
+                right: 120px;
+            }
+        }
+        .leaf{
+            position: absolute;
+            right: 75px;
+            bottom: 117px;
+            animation: leaf 4s  ease-in-out infinite  ;
+            @media (max-width:1024px) {
+                right: 200px;
+                bottom: 110px;
+            }
+        }
+        @media (min-width:1820px) {
+            right: 300px;
+        }
+        @media (max-width:1024px) {
+            right: -15%;
+            img{
+                width: 80%;
+            }
+        }
+        @media (max-width:991px) {
+            right: -40%;
+            bottom: 20px;
+            img{
+                width: 80%;
+            }
+        }
+        @media (max-width:480px) {
+            right: -115%;
+            bottom: 20px;
+            img{
+                width: 80%;
+            }
+        }
+        @media (max-width:375px) {
+            right: -145%;
+
+            img{
+                width: 70%;
+            }
+        }
+    }
+    .window{
+        position: absolute;
+        left: 90px;
+        bottom: 220px;
+        width: max-content;
+        height: max-content;
+        z-index: -2;
+        @media (min-width:1820px) {
+            left: 280px;
+        }
+        @media (max-width:1024px) {
+            img{
+                width: 80%;
+            }
+        }
+        @media (max-width:991px) {
+            left: -15%;
+            bottom: 35%;
+            img{
+                width: 80%;
+            }
+        }
+        @media (max-width:480px) {
+            left: -50%;
+            bottom: 35%;
+            img{
+                width: 80%;
+            }
+        }
+        @media (max-width:375px) {
+            img{
+                width: 70%;
+            }
+        }
+    }
+    .employee-2{
+        z-index: 2;
+        position: absolute;
+        bottom: 30px;
+        left:30%;
+        transform: translateX(-95%);
+        width: max-content;
+        z-index: 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @media (max-width:1024px) {
+            img{
+                width: 80%;
+            }
+        }
+        @media (max-width:991px) {
+            bottom: 15px;
+            left: 40%;
+            img{
+                width: 80%;
+            }
+        }
+        @media (max-width:375px) {
+            left:45%;
+        }
+
+    }
+    .employee-2_2{
+        position: absolute;
+        right: -26px;
+        top: 102px;
+        animation: employee-2_2 2s ease-in-out infinite alternate ;
+        z-index: 1;
+        @media (max-width:1024px) {
+            right: 1px;
+            top: 82px;
+        }
+    }
+    .employee-2_3{
+        position: absolute;
+        left: 40px;
+        top: 105px;
+        animation: employee-2_3 2.5s ease-in-out infinite alternate ;
+        @media (max-width:1024px) {
+            left: 33px;
+            top: 83px;                   
+        }
+    }
+}
+@keyframes employee-2_2 {
+    0%{
+        transform: translate(-6px, 6px) rotate(7deg)
+    }
+    100%{
+        transform: translate(0 , 0) rotate(0);
+    }
+}
+@keyframes employee-2_3 {
+    0%{
+        transform: translate(-10px, 2px) rotate(7deg)
+    }
+    100%{
+        transform: translate(0 , 0) rotate(0);
+    }
+}
+@media(max-width:1024px){
+    @keyframes employee-2_2 {
+        0%{
+            transform: translate(-3px, 4px) rotate(7deg)
+        }
+        100%{
+            transform: translate(0 , 0) rotate(0);
+        }
+    }
+    
+    @keyframes employee-2_3 {
+        0%{
+            transform: translate(-5px, 1px) rotate(7deg)
+        }
+        100%{
+            transform: translate(0 , 0) rotate(0);
+        }
+    }   
+}
+@keyframes branch {
+    0%{
+        transform: translate(-5px, 2px) rotate(-7deg)
+    }
+    100%{
+        transform: translate(0 , 0) rotate(0);
+    }
+}
+@keyframes leaf {
+    0%{
+        transform: translate(0 , 0) rotate(0);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(-23px, 115px) rotate(-15deg);
+    }
+}
+@keyframes offesLight {
+    0%{
+        opacity: .5;
+    }
+    100%{
+        opacity: 1;
     }
 }

@@ -10,7 +10,7 @@ html(lang="ar")
         link(rel="stylesheet", href="css/all.min.css")
         link(rel="stylesheet", href="css/main.css")
         link(rel="shortcut icon",type="img/png",href="images/logo.png")
-    body
+    body.body2
         //- .overlay-1
         .overlay
         nav
@@ -44,52 +44,38 @@ html(lang="ar")
                             li
                                 a(href="#") إرسال شكوى
         .content
-            .maincon.scene
-
-                .homeRight
-                    img(src="images/homeright.png", alt="homeright").homerightImg
-                .homeCenter
-                    img(src="images/centerOp.png", alt="homeCenter").homeCenterImg
-                .homeLeft
-                    img(src="images/homeLeft.png", alt="homeLeft").homeLeftImg
-                .tree(data-depth="0.05"  )
-                    img(src="images/tree.png", alt="homeLeft")
-                .sun(data-depth="0.1" )
-                    img(src="images/sun.png", alt="sun")
-                .cl1(data-depth="0.1" )
-                    img(src="images/cl1.png")
-                .cl2(data-depth="0.1" )
-                    img(src="images/cl2.png")
-                .cl3(data-depth="0.1" )
-                    img(src="images/cl3.png")
-            .employee
-                .employee-1
-                    img(src="images/employee1.png")
+            .mainCon2
+                .offes
+                    img(src="images/offes.png")
+                    .light
+                        img(src="images/offesLight.png")
+                    .branch
+                        img(src="images/branch.png")
+                    .leaf
+                        img(src="images/leaf.png")
+                .window
+                    img(src="images/window.png")
                 .employee-2
-                    img(src="images/employee2.png")
-                .employee-3
-                    img(src="images/employee3.png")
-                .employee-4
-                    img(src="images/employee4.png")
-                .employee-5
-                    img(src="images/employee5.png")
-            .street
-                img(src="images/street.jpg", alt="street").streetoImg
-
-            .formes
+                    .employee-2_1
+                        img(src="images/employee-2_1.png")
+                    .employee-2_2
+                        img(src="images/employee-2_2.png")
+                    .employee-2_3
+                        img(src="images/employee-2_3.png")
+            //- .formes
                 img(src="images/logForm.png", alt="log form")
                 .logInForm.logCon
                     form(id="logInForm")
                         input(type="password" placeholder="الكود بتاعك").logInput
                         button.logButton.logbtn
                             span خبط وادخل
-                //.logOut.logCon
+                .logOut.logCon
                     form(id="logOut")
                         input(type="password" placeholder="الكود بتاعك").loginput.logOutInput
                         button.logbtn.logOutButton
                             span تسجيل خروج
 
-            //.welcome
+            .welcome
                 img(src="images/massage.png", class="welcome-bac" alt="massage")
                 .massage.ms1
                     img(src="images/emo1.png", alt="emo")
@@ -101,10 +87,9 @@ html(lang="ar")
                 //-     img(src="images/emo2.png", alt="emo")
                 //-     p نشوفك في الصباح علي خير يا غااالي      
             .time
-                span.min 7:
-                span.hour 57
+                span.min 14:
+                span.hour 15
         script(src="js/jquery.min.js")
         script(src="js/bootstrap.min.js")
-        script(src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.js")
         script(src="js/main.js")
         script(src="http://localhost:35729/livereload.js")

@@ -377,32 +377,43 @@ body {
       width: max-content;
       right: 312px !important;
       left: unset !important;
-      top: 116px !important;
+      bottom: 369px !important;
+      height: -webkit-max-content;
+      height: -moz-max-content;
+      height: max-content;
       z-index: 2;
       -webkit-transform: scale(1);
               transform: scale(1);
       -webkit-animation: heart 2s ease-in-out infinite alternate;
-              animation: heart 2s ease-in-out infinite alternate; }
+              animation: heart 2s ease-in-out infinite alternate;
+      top: unset !important; }
       @media (min-width: 1440px) {
         .content .maincon .sun {
-          top: 110px !important;
-          right: 372px !important; } }
+          bottom: 310px !important;
+          right: 400px !important; } }
       @media (min-width: 1920px) {
         .content .maincon .sun {
-          top: 150px !important;
-          right: 452px !important; } }
+          bottom: 470px !important;
+          right: 500px !important; } }
       @media (max-width: 1024px) {
         .content .maincon .sun {
           right: 175px !important;
-          top: 126px !important; } }
+          bottom: 310px !important; } }
       @media (max-width: 768px) {
         .content .maincon .sun {
           right: -36px !important;
-          top: 90px !important; } }
+          bottom: 330px !important; } }
       @media (max-width: 480px) {
         .content .maincon .sun {
-          top: 430px !important;
+          bottom: 430px !important;
           right: 27px !important; } }
+      @media (max-width: 480px) {
+        .content .maincon .sun {
+          bottom: 165px  !important;
+          right: 37px !important; } }
+      @media (max-height: 736px) {
+        .content .maincon .sun {
+          bottom: 155px  !important; } }
       .content .maincon .sun img {
         width: 90%; }
         @media (max-width: 1024px) {
@@ -945,30 +956,38 @@ body {
 .time {
   position: absolute;
   left: 182px;
-  top: 90px;
+  bottom: 440px;
   font-family: 'Jazeera';
   font-size: 70px;
   text-shadow: 1px 2px 0px rgba(34, 34, 34, 0.25);
   color: #f4fdff; }
   @media (min-width: 1440px) {
     .time {
-      top: 100px;
-      left: 282px; } }
+      bottom: 400px;
+      left: 300px; } }
   @media (min-width: 1920px) {
     .time {
-      top: 180px;
+      bottom: 530px;
       left: 382px; } }
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     .time {
       left: 96px;
-      top: 50px !important; } }
+      bottom: 400px; } }
   @media (max-width: 480px) {
     .time {
-      top: 75px !important;
       font-size: 66.281px;
       left: 50%;
-      top: 60px;
+      bottom: 400px;
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); } }
+  @media (max-width: 415px) {
+    .time {
+      bottom: 550px; } }
+  @media (max-width: 375px) {
+    .time {
+      bottom: 480px; } }
+  @media (max-height: 812px) {
+    .time {
+      bottom: 580px; } }
 
 /*# sourceMappingURL=main.css.map */

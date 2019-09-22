@@ -366,34 +366,41 @@ body{
             width: max-content;
             right: 312px !important;
             left: unset !important;
-            top: 116px !important;
+            bottom: 369px !important;
+            height: max-content;
             z-index: 2;
             transform: scale(1);
             animation: heart 2s ease-in-out infinite alternate;
+            top: unset !important;
             @media (min-width:1440px) {
-                top: 110px !important;
-                right: 372px !important;
+                bottom: 310px !important;
+                right: 400px !important;
             }
             @media (min-width:1920px) {
-                top: 150px !important;
-                
-                right: 452px !important;
+                bottom: 470px !important;
+                right: 500px !important;
             }
             
             @media (max-width:1024px) {
                 right: 175px !important;
-                top: 126px !important;
+                bottom: 310px !important;
             }
             @media (max-width:768px) {
                 right: -36px !important;
-                top: 90px !important;
+                bottom: 330px !important;
             }
             @media (max-width:480px) {
-                top: 430px !important;
+                bottom: 430px !important;
                 right: 27px !important;
-
             }
-
+            @media (max-width:480px) {
+                bottom: 165px  !important;
+                right: 37px !important;
+            }
+            @media (max-height:736px) {
+                bottom: 155px  !important;
+            }
+        
             img{
                 width: 90%;
                 @media (max-width:1024px) {
@@ -698,14 +705,14 @@ body{
             width: 265px;
             height: 240px;
         }
-
+        
         margin: auto;
         bottom: 0;
         z-index: 1;
         @media (min-width:1920px) {
             right: 45%;
             top:-350px;
-
+            
         }
         @media (max-width:1024px) {
             top:-220px;
@@ -717,7 +724,6 @@ body{
         @media (max-width:480px) {
             top:-50px;
         }
-    
         img{
             position: absolute;
             top: 0;
@@ -728,10 +734,10 @@ body{
             @media (max-width:480px) {
                 width: 100%;
             }
-    
+            
         }
     }
-
+    
     .logCon{
         position: absolute;
         top:0;
@@ -893,31 +899,38 @@ body{
 .time{
     position: absolute;
     left: 182px;
-    top: 90px;
+    bottom: 440px;
     font-family: 'Jazeera';
     font-size: 70px;
     text-shadow: 1px 2px 0px rgba(34, 34, 34, 0.25);
     color: rgb(244, 253, 255);
     @media (min-width:1440px) {
-        top: 100px;
-        left: 282px;
-
+        bottom: 400px;
+        left: 300px;
+    
     }
     @media (min-width:1920px) {
-        top: 180px;
+        bottom: 530px;
         left: 382px;
 
     }
-    @media (max-width:768px) {
+    @media (max-width:991px) {
         left: 96px;
-        top: 50px !important;      
+        bottom: 400px;      
     }
     @media (max-width:480px) {
-        top: 75px !important;    
         font-size: 66.281px;          
         left: 50%;
-        top:60px;
+        bottom:400px ;
         transform:translateX(-50%);
     }
-
+    @media (max-width:415px) {
+        bottom:550px ;
+    }
+    @media (max-width:375px) {
+        bottom:480px ;
+    }
+    @media (max-height:812px) {
+        bottom:580px  ;
+    }
 }

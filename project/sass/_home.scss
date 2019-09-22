@@ -224,6 +224,10 @@ body{
             @media (min-width: 1920px) {
                 right: 530px !important;
             }
+            @media (max-width:1400px) {
+                right: 320px !important;
+            }
+
             @media (max-width:1024px) {
                 right: 54px !important;
             }
@@ -234,7 +238,7 @@ body{
             img{
                 width: 90%;
                 height: auto;
-                @media (min-width:1440px) {
+                @media (max-width:1400px) {
                     width: 100%;
                 }
                 @media (min-width:1920px) {

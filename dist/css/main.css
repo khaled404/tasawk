@@ -247,6 +247,9 @@ body {
       @media (min-width: 1920px) {
         .content .maincon .homeCenter {
           right: 530px !important; } }
+      @media (max-width: 1400px) {
+        .content .maincon .homeCenter {
+          right: 320px !important; } }
       @media (max-width: 1024px) {
         .content .maincon .homeCenter {
           right: 54px !important; } }
@@ -257,7 +260,7 @@ body {
       .content .maincon .homeCenter img {
         width: 90%;
         height: auto; }
-        @media (min-width: 1440px) {
+        @media (max-width: 1400px) {
           .content .maincon .homeCenter img {
             width: 100%; } }
         @media (min-width: 1920px) {

@@ -934,6 +934,9 @@ body{
     @media (max-width:375px) {
         bottom:470px ;
     }
+    @media (min-height:760px ) and (max-width:360px) {
+        bottom:530px  ;
+    }
     @media (min-height:812px ) and (max-height:1024px) {
         bottom:540px  ;
     }

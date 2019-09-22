@@ -987,11 +987,11 @@ body {
   @media (max-width: 415px) {
     .time {
       bottom: 550px; } }
+  @media (max-width: 375px) {
+    .time {
+      bottom: 470px; } }
   @media (min-height: 812px) and (max-height: 1024px) {
     .time {
       bottom: 540px; } }
-  @media (max-width: 375px) {
-    .time {
-      bottom: 560px; } }
 
 /*# sourceMappingURL=main.css.map */

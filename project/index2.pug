@@ -1,0 +1,110 @@
+doctype
+html(lang="ar")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title تسوق
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Cairo:400,600,700&display=swap")
+        link(rel="stylesheet", href="css/bootstrap4.min.css")
+        link(rel="stylesheet", href="css/all.min.css")
+        link(rel="stylesheet", href="css/main.css")
+        link(rel="shortcut icon",type="img/png",href="images/logo.png")
+    body
+        //- .overlay-1
+        .overlay
+        nav
+            .container
+                .main-nav
+                    button.troger 
+                        i.fas.fa-bars
+                    .logo
+                        img(src="images/logo.png", alt="Logo")
+                    .left-nav
+                        .header
+                            a(href="#").cross
+                                img(src="images/cross.png", alt="cross")
+                            
+                            .info
+                                img(src="images/user.png", alt="user")
+                                h2 Mo3az Mohamed
+                                p UI Developer
+                        ul.list-unstyled.list
+                            li
+                                a(href="#") تقـــرير يـومي
+                            li
+                                a(href="#") تقــرير شهري
+
+                            li
+                                a(href="#")  إجـازات سنوية
+
+                            li
+                                a(href="#") طلـــــــــب إذن
+
+                            li
+                                a(href="#") إرسال شكوى
+        .content
+            .maincon.scene
+
+                .homeRight
+                    img(src="images/homeright.png", alt="homeright").homerightImg
+                .homeCenter
+                    img(src="images/centerOp.png", alt="homeCenter").homeCenterImg
+                .homeLeft
+                    img(src="images/homeLeft.png", alt="homeLeft").homeLeftImg
+                .tree(data-depth="0.05"  )
+                    img(src="images/tree.png", alt="homeLeft")
+                .sun(data-depth="0.1" )
+                    img(src="images/sun.png", alt="sun")
+                .cl1(data-depth="0.1" )
+                    img(src="images/cl1.png")
+                .cl2(data-depth="0.1" )
+                    img(src="images/cl2.png")
+                .cl3(data-depth="0.1" )
+                    img(src="images/cl3.png")
+            .employee
+                .employee-1
+                    img(src="images/employee1.png")
+                .employee-2
+                    img(src="images/employee2.png")
+                .employee-3
+                    img(src="images/employee3.png")
+                .employee-4
+                    img(src="images/employee4.png")
+                .employee-5
+                    img(src="images/employee5.png")
+            .street
+                img(src="images/street.jpg", alt="street").streetoImg
+
+            .formes
+                img(src="images/logForm.png", alt="log form")
+                .logInForm.logCon
+                    form(id="logInForm")
+                        input(type="password" placeholder="الكود بتاعك").logInput
+                        button.logButton.logbtn
+                            span خبط وادخل
+                //.logOut.logCon
+                    form(id="logOut")
+                        input(type="password" placeholder="الكود بتاعك").loginput.logOutInput
+                        button.logbtn.logOutButton
+                            span تسجيل خروج
+
+            //.welcome
+                img(src="images/massage.png", class="welcome-bac" alt="massage")
+                .massage.ms1
+                    img(src="images/emo1.png", alt="emo")
+                    p صباح الخير: ظبط ساعتك ومتتأخرش تاني  لو سمحت
+                //- .massage.ms2
+                //-     img(src="images/emo2.png", alt="emo")
+                //-     p نورت مكتبك يامعلم      
+                //- .massage.ms3
+                //-     img(src="images/emo2.png", alt="emo")
+                //-     p نشوفك في الصباح علي خير يا غااالي      
+            .time
+                span.min 7:
+                span.hour 57
+        script(src="js/jquery.min.js")
+        script(src="js/bootstrap.min.js")
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.js")
+        script(src="js/main.js")
+        script(src="http://localhost:35729/livereload.js")

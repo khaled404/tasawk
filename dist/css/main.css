@@ -484,6 +484,7 @@ body {
       -webkit-animation: unset;
               animation: unset; } }
   .content .employee {
+    z-index: 2;
     position: absolute;
     bottom: 30px;
     left: 50%;
@@ -752,13 +753,13 @@ body {
     top: -280px;
     width: 285px;
     height: 260px;
+    z-index: 222;
     margin: auto;
-    bottom: 0;
-    z-index: 1; }
+    bottom: 0; }
     @media (max-width: 480px) {
       .content .formes {
-        width: 265px;
-        height: 240px; } }
+        width: 255px;
+        height: 230px; } }
     @media (min-width: 1920px) {
       .content .formes {
         right: 45%;

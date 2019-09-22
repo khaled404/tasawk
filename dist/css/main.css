@@ -986,7 +986,7 @@ body {
               transform: translateX(-50%); } }
   @media (max-width: 415px) {
     .time {
-      bottom: 550px; } }
+      bottom: 560px; } }
   @media (max-width: 375px) {
     .time {
       bottom: 470px; } }

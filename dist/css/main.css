@@ -413,7 +413,7 @@ body {
           right: 37px !important; } }
       @media (max-height: 736px) {
         .content .maincon .sun {
-          bottom: 155px  !important; } }
+          bottom: 175px  !important; } }
       .content .maincon .sun img {
         width: 90%; }
         @media (max-width: 1024px) {
@@ -988,6 +988,6 @@ body {
       bottom: 480px; } }
   @media (max-height: 812px) {
     .time {
-      bottom: 580px; } }
+      bottom: 540px; } }
 
 /*# sourceMappingURL=main.css.map */

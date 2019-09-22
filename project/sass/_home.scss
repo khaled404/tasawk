@@ -16,7 +16,7 @@ body{
     left: 0;
     bottom: 0;
     right: 0;
-    z-index: 50;
+    z-index: 224;
     visibility: hidden;
     &.active{
         visibility: visible;
@@ -29,7 +29,7 @@ body{
     margin-top: 30px;
     align-items: center;
     position: fixed;
-    z-index: 70;
+    z-index:270;
     @media (max-width:480px) {
         width: 100%;
     }
@@ -937,5 +937,4 @@ body{
     @media (min-height:812px ) and (max-height:1024px) {
         bottom:540px  ;
     }
-
 }

@@ -929,15 +929,12 @@ body{
         transform:translateX(-50%);
     }
     @media (max-width:415px) {
-        bottom:560px ;
-    }
-    @media (max-width:375px) {
-        bottom:470px ;
-    }
-    @media (min-height:760px ) and (max-width:360px) {
-        bottom:560px  ;
+        bottom:550px ;
     }
     @media (min-height:812px ) and (max-height:1024px) {
         bottom:540px  ;
+    }
+    @media (max-width:375px) {
+        bottom:560px ;
     }
 }

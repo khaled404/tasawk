@@ -1,137 +1,216 @@
-.mainCon3 .moon {
-  position: absolute;
-  left: 24%;
-  bottom: 43%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  z-index: -1; }
-  .mainCon3 .moon img {
-    width: 90%;
-    -webkit-animation: moonLight 3s ease-in-out infinite alternate;
-            animation: moonLight 3s ease-in-out infinite alternate; }
+.body3 {
+  background: radial-gradient(ellipse at bottom, #11196b 0%, #1b6790 100%); }
 
-.mainCon3 .mainCon3 {
-  width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-  position: absolute !important;
+.mainCon3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
   height: 100vh; }
-  .mainCon3 .mainCon3 * {
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden; }
-
-.mainCon3 .evenHomeRight {
-  position: absolute;
-  right: -17%;
-  z-index: 5;
-  bottom: 95px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content; }
-  .mainCon3 .evenHomeRight .light {
+  .mainCon3 .moon {
     position: absolute;
-    right: 316px;
-    top: 72px;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    -webkit-animation: officeLight 2s ease-in-out infinite alternate;
-            animation: officeLight 2s ease-in-out infinite alternate; }
-  @media (max-width: 991px) {
-    .mainCon3 .evenHomeRight {
-      right: 0; }
-      .mainCon3 .evenHomeRight img {
-        width: 60%; } }
-  .mainCon3 .evenHomeRight .titel {
-    text-transform: uppercase;
-    position: absolute;
-    font-size: 25px;
-    text-shadow: 0 0 0px rgba(34, 34, 34, 0.25);
-    color: #f4fdff;
-    right: 41%;
-    top: 4.5px;
-    -webkit-animation: textLight 2s ease-in-out infinite alternate;
-            animation: textLight 2s ease-in-out infinite alternate;
-    pointer-events: none; }
-    @media (max-width: 991px) {
-      .mainCon3 .evenHomeRight .titel {
-        font-size: 18px; } }
-
-.mainCon3 .evenHomeCenter {
-  position: absolute;
-  z-index: 2;
-  right: 23%;
-  bottom: 96px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content; }
-  @media (max-width: 991px) {
-    .mainCon3 .evenHomeCenter {
-      right: 0; }
-      .mainCon3 .evenHomeCenter img {
-        width: 60%; } }
-
-.mainCon3 .evenHomeLeft {
-  position: absolute;
-  left: -27%;
-  z-index: 6;
-  bottom: 100px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content; }
-  .mainCon3 .evenHomeLeft .light {
-    position: absolute;
-    left: 51.4%;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    -webkit-animation: officeLight 2s ease-in-out infinite alternate;
-            animation: officeLight 2s ease-in-out infinite alternate; }
-  @media (max-width: 991px) {
-    .mainCon3 .evenHomeLeft {
-      left: 0; }
-      .mainCon3 .evenHomeLeft img {
-        width: 60%; } }
-
-.mainCon3 .employee-3 {
-  position: absolute;
-  z-index: 22;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
-  right: 31%;
-  top: 43%; }
-  .mainCon3 .employee-3_1 {
-    z-index: 2;
+    left: 24%;
+    bottom: 43%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: -1; }
+    @media (min-width: 1440px) {
+      .mainCon3 .moon {
+        left: 31%;
+        bottom: 48%; } }
+    @media (min-width: 1920px) {
+      .mainCon3 .moon {
+        left: 27%;
+        bottom: 48%; } }
+    @media (max-width: 768px) {
+      .mainCon3 .moon {
+        left: 13%;
+        bottom: 40%; } }
+    @media (max-width: 480px) {
+      .mainCon3 .moon {
+        left: 2%;
+        bottom: 40%; } }
+    .mainCon3 .moon img {
+      width: 90%;
+      -webkit-animation: moonLight 3s ease-in-out infinite alternate;
+              animation: moonLight 3s ease-in-out infinite alternate; }
+  .mainCon3 .home {
+    margin-top: auto;
+    z-index: 1;
     position: relative; }
-  .mainCon3 .employee-3_2 {
+    .mainCon3 .home .pig {
+      display: none; }
+      @media (min-width: 992px) {
+        .mainCon3 .home .pig {
+          display: block; } }
+    .mainCon3 .home .sm {
+      display: none; }
+      @media (max-width: 991px) {
+        .mainCon3 .home .sm {
+          display: block; } }
+    .mainCon3 .home img {
+      width: 100vw; }
+      @media (max-width: 480px) {
+        .mainCon3 .home img {
+          height: 240px; } }
+    .mainCon3 .home div {
+      position: absolute; }
+    .mainCon3 .home .light-right,
+    .mainCon3 .home .light-left {
+      position: absolute;
+      top: 72px;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      -webkit-animation: officeLight 2s ease-in-out infinite alternate;
+              animation: officeLight 2s ease-in-out infinite alternate; }
+      @media (min-width: 1605px) {
+        .mainCon3 .home .light-right,
+        .mainCon3 .home .light-left {
+          top: 86px; } }
+      @media (min-width: 1920px) {
+        .mainCon3 .home .light-right,
+        .mainCon3 .home .light-left {
+          top: 108px; } }
+      @media (max-width: 1024px) {
+        .mainCon3 .home .light-right,
+        .mainCon3 .home .light-left {
+          top: 60px; } }
+      @media (max-width: 991px) {
+        .mainCon3 .home .light-right,
+        .mainCon3 .home .light-left {
+          display: none; } }
+      .mainCon3 .home .light-right img,
+      .mainCon3 .home .light-left img {
+        width: 100%; }
+        @media (max-width: 1024px) {
+          .mainCon3 .home .light-right img,
+          .mainCon3 .home .light-left img {
+            width: 70%; } }
+        @media (max-width: 480px) {
+          .mainCon3 .home .light-right img,
+          .mainCon3 .home .light-left img {
+            width: 20%; } }
+      @media (max-width: 892px) {
+        .mainCon3 .home .light-right,
+        .mainCon3 .home .light-left {
+          display: none; } }
+    .mainCon3 .home .light-right {
+      right: 5.5%; }
+      @media (min-width: 1440px) {
+        .mainCon3 .home .light-right {
+          right: 6.5%; } }
+      @media (min-width: 1605px) {
+        .mainCon3 .home .light-right {
+          right: 8.5%; } }
+      @media (min-width: 1920px) {
+        .mainCon3 .home .light-right {
+          right: 11.5%; } }
+      @media (max-width: 1024px) {
+        .mainCon3 .home .light-right {
+          right: -4.5%; } }
+    .mainCon3 .home .light-left {
+      left: 14.8%; }
+      @media (min-width: 1440px) {
+        .mainCon3 .home .light-left {
+          left: 15.8%; } }
+      @media (min-width: 1605px) {
+        .mainCon3 .home .light-left {
+          left: 17.9%; } }
+      @media (min-width: 1920px) {
+        .mainCon3 .home .light-left {
+          left: 20.9%; } }
+      @media (max-width: 1024px) {
+        .mainCon3 .home .light-left {
+          left: 15.8%; } }
+    .mainCon3 .home .titel {
+      text-transform: uppercase;
+      position: absolute;
+      font-size: 25px;
+      text-shadow: 0 0 0px rgba(34, 34, 34, 0.25);
+      color: #f4fdff;
+      right: 13.5%;
+      top: 0;
+      -webkit-animation: textLight 2s ease-in-out infinite alternate;
+              animation: textLight 2s ease-in-out infinite alternate;
+      pointer-events: none; }
+      @media (min-width: 1920px) {
+        .mainCon3 .home .titel {
+          font-size: 35px; } }
+      @media (max-width: 1024px) {
+        .mainCon3 .home .titel {
+          font-size: 18px; } }
+      @media (max-width: 991px) {
+        .mainCon3 .home .titel {
+          display: none; } }
+  .mainCon3 .employee-3 {
     position: absolute;
-    top: 8%;
-    right: -34%;
-    z-index: 1;
-    -webkit-animation: employee-3_2 2s ease-in-out infinite alternate;
-            animation: employee-3_2 2s ease-in-out infinite alternate; }
-  .mainCon3 .employee-3_3 {
-    position: absolute;
-    top: 8%;
-    left: -25%;
-    z-index: 1;
-    -webkit-animation: employee-3_3 2s ease-in-out infinite alternate;
-            animation: employee-3_3 2s ease-in-out infinite alternate; }
+    z-index: 22;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    right: 31%;
+    bottom: 0; }
+    @media (min-width: 1920px) {
+      .mainCon3 .employee-3 {
+        right: 36%; } }
+    @media (max-width: 1024px) {
+      .mainCon3 .employee-3 {
+        right: 23%; }
+        .mainCon3 .employee-3 img {
+          width: 80%; } }
+    @media (max-width: 991px) {
+      .mainCon3 .employee-3 {
+        right: 28%; }
+        .mainCon3 .employee-3 img {
+          width: 70%; } }
+    @media (max-width: 480px) {
+      .mainCon3 .employee-3 {
+        right: 23%; }
+        .mainCon3 .employee-3 img {
+          width: 60%; } }
+    .mainCon3 .employee-3_1 {
+      z-index: 2;
+      position: relative; }
+    .mainCon3 .employee-3_2 {
+      position: absolute;
+      top: 8%;
+      right: -34%;
+      z-index: 1;
+      -webkit-animation: employee-3_2 2s ease-in-out infinite alternate;
+              animation: employee-3_2 2s ease-in-out infinite alternate; }
+      @media (max-width: 1024px) {
+        .mainCon3 .employee-3_2 {
+          right: -22%; } }
+      @media (max-width: 991px) {
+        .mainCon3 .employee-3_2 {
+          right: -17%; } }
+      @media (max-width: 480px) {
+        .mainCon3 .employee-3_2 {
+          right: -9%; } }
+    .mainCon3 .employee-3_3 {
+      position: absolute;
+      top: 8%;
+      left: -25%;
+      z-index: 1;
+      -webkit-animation: employee-3_3 2s ease-in-out infinite alternate;
+              animation: employee-3_3 2s ease-in-out infinite alternate; }
+      @media (max-width: 1024px) {
+        .mainCon3 .employee-3_3 {
+          left: -19%; } }
+      @media (max-width: 991px) {
+        .mainCon3 .employee-3_3 {
+          left: -17%; } }
+      @media (max-width: 480px) {
+        .mainCon3 .employee-3_3 {
+          left: -15%;
+          top: 7.5%; } }
 
-.mainCon3 .road {
+.road {
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100vw;
   z-index: 4; }
 
 @-webkit-keyframes moonLight {
@@ -193,5 +272,184 @@
   100% {
     -webkit-transform: translate(0, 0) rotate(0);
             transform: translate(0, 0) rotate(0); } }
+
+@media (max-width: 991px) {
+  @-webkit-keyframes employee-3_3 {
+    0% {
+      -webkit-transform: translate(-6px, 4px) rotate(-12deg);
+              transform: translate(-6px, 4px) rotate(-12deg); }
+    100% {
+      -webkit-transform: translate(0, 0) rotate(0);
+              transform: translate(0, 0) rotate(0); } }
+  @keyframes employee-3_3 {
+    0% {
+      -webkit-transform: translate(-6px, 4px) rotate(-12deg);
+              transform: translate(-6px, 4px) rotate(-12deg); }
+    100% {
+      -webkit-transform: translate(0, 0) rotate(0);
+              transform: translate(0, 0) rotate(0); } } }
+
+/*.body3{
+    background: radial-gradient(ellipse at bottom, #11196b 0%,  #1b6790 100%);
+}
+.mainCon3{
+    .moon{
+        position: absolute;
+        left: 24%;
+        bottom: 43%;    
+        transform: translateY(-50%);
+        z-index: -1;
+        img{
+            width: 90%;
+            animation: moonLight 3s ease-in-out infinite alternate ;
+        }
+    }
+    .mainCon3{
+        *{
+            backface-visibility: hidden;
+        }
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+        position: absolute !important;
+        display: flex;
+        overflow: hidden;
+        height: 100vh;
+
+    }
+    .evenHomeRight{
+        position: absolute;
+        right: -17%;
+        z-index: 5;
+        bottom: 95px;
+        width: max-content;     
+        .light{
+            position: absolute;
+            right: 316px;
+            top: 72px;
+            width: max-content;
+            animation: officeLight 2s ease-in-out infinite alternate ;
+        }
+        @media (max-width:991px) {
+            right:0;            
+            img{
+                width: 60%;
+            }
+        }
+        .titel{
+            text-transform: uppercase;
+            position: absolute;
+            // font-family: 'Jazeera';
+            font-size: 25px;
+            text-shadow: 0 0 0px rgba(34, 34, 34, 0.25);
+            color: rgb(244, 253, 255);            
+            right: 41%;
+            top: 4.5px;
+            animation: textLight 2s ease-in-out infinite alternate ;
+            pointer-events: none;
+            @media (max-width:991px) {
+                font-size: 18px;
+            }
+        }
+    }
+    .evenHomeCenter{
+        position: absolute;
+        z-index: 2;
+        right: 23%;
+        bottom: 96px;
+        width: max-content;     
+        @media (max-width:991px) {
+            right: 0;
+            img{
+                width: 60%;
+            }
+        }
+    }
+    .evenHomeLeft{
+        position: absolute;
+        left: -27%;
+        z-index: 6;
+        bottom: 100px;
+        width: max-content;   
+        .light{
+            position: absolute;
+            left: 51.4%;
+            width: max-content;
+            animation: officeLight 2s ease-in-out infinite alternate ;
+        }
+        @media (max-width:991px) {
+        left:0;
+            
+            img{
+                width: 60%;
+            }
+        }
+    }
+    .employee-3{
+        position: absolute;
+        z-index: 22;
+        width: max-content;
+        height: max-content;
+        right: 31%;
+        top: 43%;    
+        &_1{
+            z-index: 2;
+            position: relative;
+        }
+        &_2{
+            position: absolute;
+            top: 8%;
+            right: -34%;
+            z-index: 1;
+            animation: employee-3_2 2s ease-in-out infinite alternate ;
+        }
+        &_3{
+            position: absolute;
+            top: 8%;
+            left: -25%;
+            z-index: 1;
+            animation: employee-3_3 2s ease-in-out infinite alternate ;
+        }
+        
+    }
+}
+.road{
+    position: absolute;
+    left: 0;
+    bottom:0;
+    z-index:4;
+}
+@keyframes moonLight{
+    0%{
+        filter: drop-shadow(0 0 0px #fff);
+    }
+    100%{
+        filter: drop-shadow(0 0 30px #fff);
+    }
+}
+@keyframes textLight{
+    0%{
+        text-shadow: 0 0px 0px #fff;
+    }
+    100%{
+        text-shadow: 0 0px 20px #fff;
+    }
+}
+@keyframes employee-3_2{
+    0%{
+        transform: translate(5px, 8px) rotate(9deg);
+    }
+    100%{
+        transform: translate(0 , 0) rotate(0);
+    }
+}
+@keyframes employee-3_3{
+    0%{
+    transform: translate(-6px, 7px) rotate(-12deg);
+    }
+    100%{
+        transform: translate(0 , 0) rotate(0);
+    }
+}*/
 
 /*# sourceMappingURL=homeTow.css.map */

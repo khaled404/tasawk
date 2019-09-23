@@ -8,6 +8,7 @@ html(lang="ar")
         link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Cairo:400,600,700&display=swap")
         link(rel="stylesheet", href="css/bootstrap4.min.css")
         link(rel="stylesheet", href="css/all.min.css")
+        link(rel="stylesheet", href="css/background.css")
         link(rel="stylesheet", href="css/main.css")
         link(rel="shortcut icon",type="img/png",href="images/logo.png")
     body.body3
@@ -48,21 +49,18 @@ html(lang="ar")
                                 a(href="#") إرسال شكوى
         .content
             .mainCon3
-                .evenHomeLeft
-                    img(src="images/eveningHomes2.png", alt="homeright")
-                    .light
-                        img(src="images/lightLeft.png")
-                .evenHomeCenter
-                    img(src="images/eveningHomes3.png", alt="homeCenter")
-                .evenHomeRight
-                    img(src="images/eveningHomes1.png", alt="homeLeft")
-                    h2.titel tasawk
-                    .light
+                .home
+                    img(src="images/homes--evening.png", alt="").pig
+                    img(src="images/homes--eveningSm.png", alt="").sm
+                    .light-right
                         img(src="images/lightRught.png")
+                    h2.titel tasawk
+                    .light-left
+                        img(src="images/lightLeft.png")
 
-                //- .moon
+                .moon
                     img(src="images/moon.png", alt="moon")
-                //- .employee-3
+                .employee-3
                     .employee-3_1
                         img(src="images/employee-3_1.png")
                     .employee-3_2
@@ -70,8 +68,8 @@ html(lang="ar")
                     .employee-3_3
                         img(src="images/employee-3_3.png")
 
-                .road
-                    img(src="images/road.png", alt="street")
+                //- .road
+                    img(src="images/road.jpg", alt="street")
                 //- .formes
                     img(src="images/logForm.png", alt="log form")
                     .logInForm.logCon
@@ -85,17 +83,17 @@ html(lang="ar")
                             button.logbtn.logOutButton
                                 span تسجيل خروج
 
-                //- .welcome
+                .welcome
                     img(src="images/massage.png", class="welcome-bac" alt="massage")
-                    .massage.ms1
+                    //.massage.ms1
                         img(src="images/emo1.png", alt="emo")
                         p صباح الخير: ظبط ساعتك ومتتأخرش تاني  لو سمحت
                     //- .massage.ms2
                     //-     img(src="images/emo2.png", alt="emo")
                     //-     p نورت مكتبك يامعلم      
-                    //- .massage.ms3
-                    //-     img(src="images/emo2.png", alt="emo")
-                    //-     p نشوفك في الصباح علي خير يا غااالي      
+                    .massage.ms3
+                        img(src="images/emo2.png", alt="emo")
+                        p نشوفك في الصباح علي خير يا غااالي      
 
             .time
                 span.min 14:

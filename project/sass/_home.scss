@@ -866,16 +866,17 @@ body{
         margin: auto;
         z-index: 22;
         pointer-events: none;
+        display: flex;
         @media (max-width:991px) {
-            top: 32%;
-            left: 52%;        
+            left: 50%;        
             .welcome-bac{
+                margin: auto;
                 width: 80%;
             }
         }
         @media (max-width:480px) {
-            top: 44%;
-            left: 68%;
+            left: 50%;
+            top: 50%;
         }
         @media (min-height:1024px) and (max-height:1366px){
             top: 50%;
@@ -885,6 +886,7 @@ body{
             }
         }
         .massage{
+            margin: auto;
             position: absolute;
             top:50%;
             left: 50%;
@@ -895,13 +897,6 @@ body{
             align-items: center;
             justify-content: center;
             text-align: center;
-            @media (max-width:991px) {
-                left: 40%;
-            }
-            @media (min-height:1024px) and (max-height:1366px){
-                left: 50%;
-            }
-
             img{
                 margin-bottom: 8px;
             }
@@ -948,10 +943,17 @@ body{
     text-shadow: 1px 2px 0px rgba(34, 34, 34, 0.25);
     color: rgb(244, 253, 255);
     pointer-events: none;
+    font-family: 'digital';
+    .hour{
+        margin-left: -15px;
+    }
+    .timer{
+        animation: officeLight .5s ease-in-out infinite alternate ;
+    }
     @media (max-width:480px) {
         font-size: 66.281px;          
         left: 50%;
-        bottom: 70%;
+        bottom: 67%;
         transform:translateX(-50%);
     }
 }
@@ -987,6 +989,10 @@ body{
             @media (max-width:1024px) {
                 left: 5%;
             }
+            @media (max-width:480px) {
+                display: none;
+            }
+    
         }
         .branch{
             position: absolute;
@@ -1024,18 +1030,14 @@ body{
             }
         }
         @media (max-width:480px) {
-            right: -115%;
+            right: -120%;
             bottom: 20px;
             img{
-                width: 80%;
+                width: 50%;            
             }
         }
-        @media (max-width:375px) {
-            right: -145%;
-
-            img{
-                width: 70%;
-            }
+        @media (max-width:380px) {
+            right: -150%;
         }
     }
     .window{
@@ -1061,16 +1063,14 @@ body{
             }
         }
         @media (max-width:480px) {
-            left: -50%;
-            bottom: 35%;
+            left: -7%;
+            bottom: 17%;
             img{
-                width: 80%;
+                width: 50%;
             }
         }
-        @media (max-width:375px) {
-            img{
-                width: 70%;
-            }
+        @media (max-width:360px) {
+            left: -25%;
         }
     }
     .employee-2{
@@ -1093,11 +1093,15 @@ body{
             bottom: 15px;
             left: 40%;
             img{
-                width: 80%;
+                width: 50%;
             }
         }
-        @media (max-width:375px) {
-            left:45%;
+        @media (max-width:480px) {
+            bottom: 15px;
+            left: 60%;
+            img{
+                width: 50%;
+            }
         }
 
     }
@@ -1111,6 +1115,10 @@ body{
             right: 1px;
             top: 82px;
         }
+        @media (max-width:480px) {
+            right: 39px;
+            top: 52px;        
+        }
     }
     .employee-2_3{
         position: absolute;
@@ -1121,6 +1129,11 @@ body{
             left: 33px;
             top: 83px;                   
         }
+        @media (max-width:480px) {
+            left: 21px;
+            top: 53px;
+        }
+
     }
 }
 @keyframes employee-2_2 {

@@ -11,6 +11,7 @@
         bottom: 43%;    
         transform: translateY(-50%);
         z-index: -1;
+        width: max-content;
         @media (min-width:1440px) {
             left: 26%;
             bottom: 46%;
@@ -27,19 +28,6 @@
             left: 13%;
             bottom: 21%;
 
-        }
-        &:after{
-            content: '';
-            position: absolute;
-            width: 70%;
-            height: 70%;
-            z-index: -1;
-            border-radius: 50%;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            background-color: #fff;
-            animation: moonLight 3s ease-in-out infinite alternate ;
         }
         img{
             width: 90%;
@@ -251,14 +239,6 @@
     position: absolute;
     bottom:0;
     z-index:4;
-}
-@keyframes moonLight{
-    0%{
-        box-shadow: 0 0 0 #fff;
-    }
-    100%{
-        box-shadow: -10px 0 80px #fff;
-    }
 }
 @keyframes textLight{
     0%{

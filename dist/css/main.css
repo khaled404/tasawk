@@ -399,8 +399,8 @@ body {
     z-index: 2;
     -webkit-transform: scale(1);
             transform: scale(1);
-    -webkit-animation: heart 2s ease-in-out infinite alternate;
-            animation: heart 2s ease-in-out infinite alternate;
+    -webkit-animation: sun 2s ease-in-out infinite alternate;
+            animation: sun 2s ease-in-out infinite alternate;
     top: unset !important; }
     @media (min-width: 1440px) {
       .content .sun {
@@ -993,12 +993,12 @@ body {
       color: #d25526;
       font-size: 30px; }
 
-@-webkit-keyframes heart {
+@-webkit-keyframes sun {
   to {
     -webkit-transform: scale(0.95);
             transform: scale(0.95); } }
 
-@keyframes heart {
+@keyframes sun {
   to {
     -webkit-transform: scale(0.95);
             transform: scale(0.95); } }
@@ -1040,7 +1040,6 @@ body {
     .time .clock img {
       width: 100%; }
   .time .hour {
-    margin-left: -36px;
     display: block; }
   .time .timer {
     -webkit-animation: officeLight .5s ease-in-out infinite alternate;
@@ -1355,7 +1354,9 @@ body {
         left: 13%;
         bottom: 21%; } }
     .mainCon3 .moon img {
-      width: 90%; }
+      width: 90%;
+      -webkit-animation: sun 2s ease-in-out infinite alternate;
+              animation: sun 2s ease-in-out infinite alternate; }
       @media (max-width: 480px) {
         .mainCon3 .moon img {
           width: 40%; } }

@@ -1,6 +1,3 @@
-
-
-
 $(function(){
     function time() {
         let currentTime = new Date ();
@@ -8,7 +5,7 @@ $(function(){
         let hour = hours12(currentTime);
         let min = currentTime.getMinutes();
         document.querySelector(".hour").textContent = hour;
-        document.querySelector(".min").textContent = min;
+        document.querySelector(".min").textContent = min ;
     }
     time()
     setInterval(() => {time();},5000);

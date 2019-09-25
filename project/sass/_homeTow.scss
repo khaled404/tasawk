@@ -31,6 +31,7 @@
         }
         img{
             width: 90%;
+            animation: sun 2s ease-in-out infinite alternate;
             @media (max-width:480px) {
                 width:40%;
             }

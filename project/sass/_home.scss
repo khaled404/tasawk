@@ -384,7 +384,7 @@ body{
         height: max-content;
         z-index: 2;
         transform: scale(1);
-        animation: heart 2s ease-in-out infinite alternate;
+        animation: sun 2s ease-in-out infinite alternate;
         top: unset !important;
         @media (min-width:1440px) {
             right: 20% !important;
@@ -930,7 +930,7 @@ body{
         }
     }
 }
-@keyframes heart
+@keyframes sun
 {
     to{
         transform: scale(.95);
@@ -969,7 +969,6 @@ body{
         }
     }
     .hour{
-        margin-left: -36px;
         display: block;
     }
     .timer{

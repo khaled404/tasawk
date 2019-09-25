@@ -47,14 +47,12 @@ html(lang="ar")
             .mainCon2
                 .office
                     img(src="images/office.png")
-                    .light
-                        img(src="images/officeLight.png")
+                    //- .light
+                    //-     img(src="images/officeLight.png")
                     .branch
                         img(src="images/branch.png")
                     .leaf
                         img(src="images/leaf.png")
-                .window
-                    img(src="images/window.png")
                 .employee-2
                     .employee-2_1
                         img(src="images/employee-2_1.png")
@@ -87,9 +85,11 @@ html(lang="ar")
                 //-     img(src="images/emo2.png", alt="emo")
                 //-     p نشوفك في الصباح علي خير يا غااالي      
             .time
-                span.min 14
-                span.timer :
+                .clock
+                    img(src="images/clock.png")
                 span.hour 15
+                span.timer :
+                span.min 14
         script(src="js/jquery.min.js")
         script(src="js/bootstrap.min.js")
         script(src="js/main.js")

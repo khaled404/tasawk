@@ -897,6 +897,9 @@ body{
             align-items: center;
             justify-content: center;
             text-align: center;
+            @media (max-width:991px) {
+                top: 57%;
+            }
             img{
                 margin-bottom: 8px;
             }
@@ -936,16 +939,42 @@ body{
 
 .time{
     position: absolute;
-    left: 12%;
-    bottom: 68%;
+    left: 20%;
+    bottom: 70%;
     font-family: 'Jazeera';
     font-size: 70px;
     text-shadow: 1px 2px 0px rgba(34, 34, 34, 0.25);
     color: rgb(244, 253, 255);
     pointer-events: none;
     font-family: 'digital';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media (max-width:1024px) {
+        left:16%;
+    }
+    @media (max-width:768px) {
+        left:12%;
+    }
+    .clock{
+        position: absolute;
+        top: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0;
+        z-index: -1;
+        width: 200px;
+        img{
+            width: 100%;
+        }
+    }
     .hour{
         margin-left: -15px;
+
+    }
+    .min{
+        margin-left: -36px;
+        display: block;
     }
     .timer{
         animation: officeLight .5s ease-in-out infinite alternate ;
@@ -959,7 +988,9 @@ body{
 }
 // page 2
 .body2{
-    background-color: #c8ebf2;
+    background-image: url('../images/bac2.png');
+    background-size: cover;
+    background-position: bottom;
 }
 .mainCon2{
     *{
@@ -975,7 +1006,7 @@ body{
     height: 100vh;
     .office{
         position: absolute;
-        right: 20px;
+        right: 5px;
         bottom: 30px;
         width: max-content;
         height: max-content;
@@ -996,20 +1027,20 @@ body{
         }
         .branch{
             position: absolute;
-            right: -10px;
+            right: -5px;
             bottom: 30px;
             animation: branch 3s ease-in-out infinite alternate ;
             @media (max-width:1024px) {
-                right: 120px;
+                right: 17%;
             }
         }
         .leaf{
             position: absolute;
-            right: 75px;
+            right: 85px;
             bottom: 117px;
             animation: leaf 4s  ease-in-out infinite  ;
             @media (max-width:1024px) {
-                right: 200px;
+                right: 27%;
                 bottom: 110px;
             }
         }
@@ -1023,54 +1054,30 @@ body{
             }
         }
         @media (max-width:991px) {
+            bottom: 20px;
+            img{
+                width: 80%;
+            }
+        }
+        @media (max-width:768px) {
             right: -40%;
             bottom: 20px;
             img{
-                width: 80%;
+                width: 70%;            
             }
         }
         @media (max-width:480px) {
-            right: -120%;
-            bottom: 20px;
+            right: -130%;
             img{
                 width: 50%;            
             }
+
         }
-        @media (max-width:380px) {
-            right: -150%;
-        }
-    }
-    .window{
-        position: absolute;
-        left: 90px;
-        bottom: 220px;
-        width: max-content;
-        height: max-content;
-        z-index: -2;
-        @media (min-width:1820px) {
-            left: 280px;
-        }
-        @media (max-width:1024px) {
-            img{
-                width: 80%;
-            }
-        }
-        @media (max-width:991px) {
-            left: -15%;
-            bottom: 35%;
-            img{
-                width: 80%;
-            }
-        }
-        @media (max-width:480px) {
-            left: -7%;
-            bottom: 17%;
-            img{
-                width: 50%;
-            }
+        @media (max-width:411px) {
+            right: -130%;
         }
         @media (max-width:360px) {
-            left: -25%;
+            right: -150%;
         }
     }
     .employee-2{
@@ -1098,7 +1105,7 @@ body{
         }
         @media (max-width:480px) {
             bottom: 15px;
-            left: 60%;
+            left: 53%;
             img{
                 width: 50%;
             }
@@ -1107,30 +1114,30 @@ body{
     }
     .employee-2_2{
         position: absolute;
-        right: -26px;
-        top: 102px;
+        right: -21px;
+        top: 100px;
         animation: employee-2_2 2s ease-in-out infinite alternate ;
         z-index: 1;
         @media (max-width:1024px) {
-            right: 1px;
+            right: 7px;
             top: 82px;
         }
         @media (max-width:480px) {
-            right: 39px;
+            right: 48px;
             top: 52px;        
         }
     }
     .employee-2_3{
         position: absolute;
-        left: 40px;
-        top: 105px;
+        left: 48px;
+        top: 104px;
         animation: employee-2_3 2.5s ease-in-out infinite alternate ;
         @media (max-width:1024px) {
-            left: 33px;
-            top: 83px;                   
+            left: 35px;
+            top: 85px;                   
         }
         @media (max-width:480px) {
-            left: 21px;
+            left: 24px;
             top: 53px;
         }
 
@@ -1146,7 +1153,7 @@ body{
 }
 @keyframes employee-2_3 {
     0%{
-        transform: translate(-10px, 2px) rotate(7deg)
+        transform: translate(-8px, 1px) rotate(7deg)
     }
     100%{
         transform: translate(0 , 0) rotate(0);

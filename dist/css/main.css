@@ -967,6 +967,9 @@ body {
           -ms-flex-pack: center;
               justify-content: center;
       text-align: center; }
+      @media (max-width: 991px) {
+        .content .welcome .massage {
+          top: 57%; } }
       .content .welcome .massage img {
         margin-bottom: 8px; }
       .content .welcome .massage p {
@@ -1002,16 +1005,45 @@ body {
 
 .time {
   position: absolute;
-  left: 12%;
-  bottom: 68%;
+  left: 20%;
+  bottom: 70%;
   font-family: 'Jazeera';
   font-size: 70px;
   text-shadow: 1px 2px 0px rgba(34, 34, 34, 0.25);
   color: #f4fdff;
   pointer-events: none;
-  font-family: 'digital'; }
+  font-family: 'digital';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 1024px) {
+    .time {
+      left: 16%; } }
+  @media (max-width: 768px) {
+    .time {
+      left: 12%; } }
+  .time .clock {
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    bottom: 0;
+    z-index: -1;
+    width: 200px; }
+    .time .clock img {
+      width: 100%; }
   .time .hour {
     margin-left: -15px; }
+  .time .min {
+    margin-left: -36px;
+    display: block; }
   .time .timer {
     -webkit-animation: officeLight .5s ease-in-out infinite alternate;
             animation: officeLight .5s ease-in-out infinite alternate; }
@@ -1024,7 +1056,9 @@ body {
               transform: translateX(-50%); } }
 
 .body2 {
-  background-color: #c8ebf2; }
+  background-image: url("../images/bac2.png");
+  background-size: cover;
+  background-position: bottom; }
 
 .mainCon2 {
   width: 100%;
@@ -1043,7 +1077,7 @@ body {
             backface-visibility: hidden; }
   .mainCon2 .office {
     position: absolute;
-    right: 20px;
+    right: 5px;
     bottom: 30px;
     width: -webkit-max-content;
     width: -moz-max-content;
@@ -1066,22 +1100,22 @@ body {
           display: none; } }
     .mainCon2 .office .branch {
       position: absolute;
-      right: -10px;
+      right: -5px;
       bottom: 30px;
       -webkit-animation: branch 3s ease-in-out infinite alternate;
               animation: branch 3s ease-in-out infinite alternate; }
       @media (max-width: 1024px) {
         .mainCon2 .office .branch {
-          right: 120px; } }
+          right: 17%; } }
     .mainCon2 .office .leaf {
       position: absolute;
-      right: 75px;
+      right: 85px;
       bottom: 117px;
       -webkit-animation: leaf 4s  ease-in-out infinite;
               animation: leaf 4s  ease-in-out infinite; }
       @media (max-width: 1024px) {
         .mainCon2 .office .leaf {
-          right: 200px;
+          right: 27%;
           bottom: 110px; } }
     @media (min-width: 1820px) {
       .mainCon2 .office {
@@ -1093,51 +1127,26 @@ body {
           width: 80%; } }
     @media (max-width: 991px) {
       .mainCon2 .office {
+        bottom: 20px; }
+        .mainCon2 .office img {
+          width: 80%; } }
+    @media (max-width: 768px) {
+      .mainCon2 .office {
         right: -40%;
         bottom: 20px; }
         .mainCon2 .office img {
-          width: 80%; } }
+          width: 70%; } }
     @media (max-width: 480px) {
       .mainCon2 .office {
-        right: -120%;
-        bottom: 20px; }
+        right: -130%; }
         .mainCon2 .office img {
           width: 50%; } }
-    @media (max-width: 380px) {
+    @media (max-width: 411px) {
+      .mainCon2 .office {
+        right: -130%; } }
+    @media (max-width: 360px) {
       .mainCon2 .office {
         right: -150%; } }
-  .mainCon2 .window {
-    position: absolute;
-    left: 90px;
-    bottom: 220px;
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-    z-index: -2; }
-    @media (min-width: 1820px) {
-      .mainCon2 .window {
-        left: 280px; } }
-    @media (max-width: 1024px) {
-      .mainCon2 .window img {
-        width: 80%; } }
-    @media (max-width: 991px) {
-      .mainCon2 .window {
-        left: -15%;
-        bottom: 35%; }
-        .mainCon2 .window img {
-          width: 80%; } }
-    @media (max-width: 480px) {
-      .mainCon2 .window {
-        left: -7%;
-        bottom: 17%; }
-        .mainCon2 .window img {
-          width: 50%; } }
-    @media (max-width: 360px) {
-      .mainCon2 .window {
-        left: -25%; } }
   .mainCon2 .employee-2 {
     z-index: 2;
     position: absolute;
@@ -1170,37 +1179,37 @@ body {
     @media (max-width: 480px) {
       .mainCon2 .employee-2 {
         bottom: 15px;
-        left: 60%; }
+        left: 53%; }
         .mainCon2 .employee-2 img {
           width: 50%; } }
   .mainCon2 .employee-2_2 {
     position: absolute;
-    right: -26px;
-    top: 102px;
+    right: -21px;
+    top: 100px;
     -webkit-animation: employee-2_2 2s ease-in-out infinite alternate;
             animation: employee-2_2 2s ease-in-out infinite alternate;
     z-index: 1; }
     @media (max-width: 1024px) {
       .mainCon2 .employee-2_2 {
-        right: 1px;
+        right: 7px;
         top: 82px; } }
     @media (max-width: 480px) {
       .mainCon2 .employee-2_2 {
-        right: 39px;
+        right: 48px;
         top: 52px; } }
   .mainCon2 .employee-2_3 {
     position: absolute;
-    left: 40px;
-    top: 105px;
+    left: 48px;
+    top: 104px;
     -webkit-animation: employee-2_3 2.5s ease-in-out infinite alternate;
             animation: employee-2_3 2.5s ease-in-out infinite alternate; }
     @media (max-width: 1024px) {
       .mainCon2 .employee-2_3 {
-        left: 33px;
-        top: 83px; } }
+        left: 35px;
+        top: 85px; } }
     @media (max-width: 480px) {
       .mainCon2 .employee-2_3 {
-        left: 21px;
+        left: 24px;
         top: 53px; } }
 
 @-webkit-keyframes employee-2_2 {
@@ -1221,16 +1230,16 @@ body {
 
 @-webkit-keyframes employee-2_3 {
   0% {
-    -webkit-transform: translate(-10px, 2px) rotate(7deg);
-            transform: translate(-10px, 2px) rotate(7deg); }
+    -webkit-transform: translate(-8px, 1px) rotate(7deg);
+            transform: translate(-8px, 1px) rotate(7deg); }
   100% {
     -webkit-transform: translate(0, 0) rotate(0);
             transform: translate(0, 0) rotate(0); } }
 
 @keyframes employee-2_3 {
   0% {
-    -webkit-transform: translate(-10px, 2px) rotate(7deg);
-            transform: translate(-10px, 2px) rotate(7deg); }
+    -webkit-transform: translate(-8px, 1px) rotate(7deg);
+            transform: translate(-8px, 1px) rotate(7deg); }
   100% {
     -webkit-transform: translate(0, 0) rotate(0);
             transform: translate(0, 0) rotate(0); } }
@@ -1330,23 +1339,25 @@ body {
     z-index: -1; }
     @media (min-width: 1440px) {
       .mainCon3 .moon {
-        left: 23%;
+        left: 26%;
         bottom: 46%; } }
     @media (max-width: 768px) {
       .mainCon3 .moon {
         left: 13%;
-        bottom: 11%; } }
+        bottom: 41%; } }
     @media (max-width: 480px) {
       .mainCon3 .moon {
-        left: 2%; } }
+        left: 8%;
+        bottom: 21%; } }
     @media (min-height: 1024px) and (max-height: 1366px) {
       .mainCon3 .moon {
         left: 13%;
         bottom: 21%; } }
     .mainCon3 .moon img {
-      width: 90%;
-      -webkit-animation: moonLight 3s ease-in-out infinite alternate;
-              animation: moonLight 3s ease-in-out infinite alternate; }
+      width: 90%; }
+      @media (max-width: 480px) {
+        .mainCon3 .moon img {
+          width: 40%; } }
   .mainCon3 .home {
     margin-top: auto;
     z-index: 1;

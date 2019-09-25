@@ -68,7 +68,7 @@ body {
     color: #27324e;
     cursor: pointer;
     border: none;
-    margin-left: 45px;
+    margin-left: 25px;
     outline: none; }
     @media (max-width: 991px) {
       .main-nav .troger {
@@ -1040,8 +1040,6 @@ body {
     .time .clock img {
       width: 100%; }
   .time .hour {
-    margin-left: -15px; }
-  .time .min {
     margin-left: -36px;
     display: block; }
   .time .timer {

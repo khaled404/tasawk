@@ -59,7 +59,7 @@ body{
         color: rgb(39, 50, 78);
         cursor: pointer;
         border: none;
-        margin-left: 45px;
+        margin-left: 25px;
         @media (max-width:991px) {
             margin-left: 0;
         }
@@ -969,10 +969,6 @@ body{
         }
     }
     .hour{
-        margin-left: -15px;
-
-    }
-    .min{
         margin-left: -36px;
         display: block;
     }

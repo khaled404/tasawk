@@ -1,20 +1,17 @@
 
-function time() {
-    let currentTime = new Date ();
-    function hours12(date) { return (date.getHours() + 24) % 12 || 12; }
-    let hour = hours12(currentTime);
-    let min = currentTime.getMinutes();
-    document.querySelector(".hour").textContent = hour;
-    document.querySelector(".min").textContent = min;
-}
-time()
-setInterval(() => {
-    time()
-},500);
-
 
 
 $(function(){
+    function time() {
+        let currentTime = new Date ();
+        function hours12(date) { return (date.getHours() + 24) % 12 || 12; }
+        let hour = hours12(currentTime);
+        let min = currentTime.getMinutes();
+        document.querySelector(".hour").textContent = hour;
+        document.querySelector(".min").textContent = min;
+    }
+    time()
+    setInterval(() => {time();},5000);
     
     $('.troger , .cross , .overlay').on('click',(e)=>{
         e.preventDefault()

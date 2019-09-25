@@ -14,7 +14,6 @@ $(function(){
         }else{
             document.querySelector(".min").textContent = min ;
         }
-
     }
     time()
     setInterval(() => {time();},5000);

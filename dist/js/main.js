@@ -4,8 +4,17 @@ $(function(){
         function hours12(date) { return (date.getHours() + 24) % 12 || 12; }
         let hour = hours12(currentTime);
         let min = currentTime.getMinutes();
-        document.querySelector(".hour").textContent = hour;
-        document.querySelector(".min").textContent = min ;
+        if(hour < 10){
+            document.querySelector(".hour").textContent = '0'+ hour;
+        }else{
+            document.querySelector(".hour").textContent = hour;
+        }
+        if(min < 10){
+            document.querySelector(".min").textContent = '0'+ min ;
+        }else{
+            document.querySelector(".min").textContent = min ;
+        }
+
     }
     time()
     setInterval(() => {time();},5000);
